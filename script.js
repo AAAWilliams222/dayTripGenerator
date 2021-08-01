@@ -34,3 +34,17 @@ let randomEntertainment = entertainment[Math.floor(Math.random() * entertainment
         userChoice[3] = randomEntertainment;;
       console.log(userChoice);
     }
+
+    let userAgrees = "yes"; 
+let output = false;
+
+while(output === false){
+    let input = prompt("Are you happy with your choices? yes or no")
+    if(input === userAgrees){
+        output = true;
+        console.log("Please enjoy yourself!");
+    }else{
+        dayTripGenerator()
+        console.log("Please choose again.");
+    }
+}
